@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wuthering Waves Character Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Wuthering Waves Character Card Generator</h1>
+    </header>
+
+    <main>
+      <!-- Panel Kontrol -->
+      <form id="card-form">
+        <h2>Formulir karakter Wuthering Waves</h2>
+
+        <label for="char-name">Nama Karakter:</label>
+        <input
+          type="text"
+          id="char-name"
+          placeholder="Contoh: Rover, Jiyan, Yinlin"
+        />
+
+        <label for="char-element">Elemen Karakter:</label>
+        <select id="char-element">
+          <option value="">-- Pilih Elemen --</option>
+          <option value="Aero">Aero</option>
+          <option value="Glacio">Glacio</option>
+          <option value="Fusion">Fusion</option>
+          <option value="Havoc">Havoc</option>
+          <option value="Electro">Electro</option>
+          <option value="Spectro">Spectro</option>
+        </select>
+
+        <label for="char-weapon">Senjata Karakter:</label>
+        <select id="char-weapon">
+          <option value="">-- Pilih Senjata --</option>
+          <option value="Sword">Sword</option>
+          <option value="Gauntlets">Gauntlets</option>
+          <option value="Broadblade">Broadblade</option>
+          <option value="Pistols">Pistols</option>
+          <option value="Rectifier">Rectifier</option>
+        </select>
+
+        <label for="char-desc">Deskripsi Karakter:</label>
+        <textarea
+          id="char-desc"
+          rows="3"
+          placeholder="Masukkan deskripsi karakter..."
+        ></textarea>
+
+        <label for="char-img">Unggah Gambar Karakter:</label>
+        <input type="file" id="char-img" accept="image/*" />
+      </form>
+
+      <!-- Area Pratinjau -->
+      <section id="preview-area">
+        <h2>Pratinjau Kartu</h2>
+        <div class="card">
+          <img
+            id="preview-img"
+            src="https://via.placeholder.com/300x300?text=Wuthering+Waves"
+            alt="Karakter Wuthering Waves"
+          />
+          <h3 id="preview-name">Nama Karakter</h3>
+          <p id="preview-element">Elemen: ???</p>
+          <p id="preview-weapon">Senjata: ???</p>
+          <p id="preview-desc">Deskripsi karakter akan muncul di sini...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Wuthering Waves Fan Project | Dibuat untuk UTS Desain Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
