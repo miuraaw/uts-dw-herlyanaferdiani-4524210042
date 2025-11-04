@@ -28,7 +28,7 @@ elementSelect.addEventListener("change", () => {
 weaponSelect.addEventListener("change", () => {
   previewWeapon.textContent = weaponSelect.value
     ? `Senjata: ${weaponSelect.value}`
-    : "Senjata: ???";
+    : "Senjata: ??";
 });
 
 
